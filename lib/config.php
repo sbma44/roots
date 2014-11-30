@@ -11,8 +11,8 @@ add_theme_support('jquery-cdn');            // Enable to load jQuery from the Go
 /**
  * Configuration values
  */
-define('GOOGLE_ANALYTICS_ID', ''); // UA-XXXXX-Y (Note: Universal Analytics only, not Classic Analytics)
-define('POST_EXCERPT_LENGTH', 40); // Length in words for excerpt_length filter (http://codex.wordpress.org/Plugin_API/Filter_Reference/excerpt_length)
+define('GOOGLE_ANALYTICS_ID', 'UA-750309-1'); // UA-XXXXX-Y (Note: Universal Analytics only, not Classic Analytics)
+define('POST_EXCERPT_LENGTH', 500); // Length in words for excerpt_length filter (http://codex.wordpress.org/Plugin_API/Filter_Reference/excerpt_length)
 
 /**
  * .main classes
@@ -55,7 +55,8 @@ function roots_display_sidebar() {
      */
     array(
       'is_404',
-      'is_front_page'
+      //'is_front_page',
+      'is_page'
     ),
     /**
      * Page template checks (via is_page_template())

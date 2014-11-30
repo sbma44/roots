@@ -43,9 +43,9 @@
 @font-family-serif:       Georgia, "Times New Roman", Times, serif;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
-@font-family-base:        @font-family-sans-serif;
+@font-family-base:        @font-family-serif;
 
-@font-size-base:          14px;
+@font-size-base:          18px;
 @font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
 @font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
 
@@ -62,8 +62,8 @@
 @line-height-computed:    floor((@font-size-base * @line-height-base)); // ~20px
 
 //** By default, this inherits from the `<body>`.
-@headings-font-family:    inherit;
-@headings-font-weight:    500;
+@headings-font-family:    "Bitter", Georgia, Serif;
+@headings-font-weight:    700;
 @headings-line-height:    1.1;
 @headings-color:          inherit;
 
@@ -400,10 +400,10 @@
 
 @pagination-color:                     @link-color;
 @pagination-bg:                        #fff;
-@pagination-border:                    #ddd;
+@pagination-border:                    none;
 
 @pagination-hover-color:               @link-hover-color;
-@pagination-hover-bg:                  @gray-lighter;
+@pagination-hover-bg:                  @pagination-bg;
 @pagination-hover-border:              #ddd;
 
 @pagination-active-color:              #fff;
@@ -421,7 +421,7 @@
 
 @pager-bg:                             @pagination-bg;
 @pager-border:                         @pagination-border;
-@pager-border-radius:                  15px;
+@pager-border-radius:                  0px;
 
 @pager-hover-bg:                       @pagination-hover-bg;
 
