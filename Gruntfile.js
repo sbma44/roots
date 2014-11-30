@@ -30,6 +30,18 @@ module.exports = function(grunt) {
         }
       }
     },
+    'ftp-deploy': {
+      build: {
+        auth: {
+          host: 'metamonkey.net',
+          port: 21,
+          authKey: 'key1'
+        },
+        src: '/Users/tomlee/mapbox/code/old/manifestdensity/current/wp-content/themes/roots',
+        dest: '/home/metamon/public_html/manifestdensity/wp-content/themes/roots',
+        exclusions: ['/Users/tomlee/mapbox/code/old/manifestdensity/current/wp-content/themes/roots/**/.DS_Store', '/Users/tomlee/mapbox/code/old/manifestdensity/current/wp-content/themes/roots/**/Thumbs.db', '/home/metamon/public_html/manifestdensity/wp-content/themes/roots/tmp']
+      }
+    },
     uglify: {
       dist: {
         files: {
@@ -109,6 +121,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-wp-version');
+  grunt.loadNpmTasks('grunt-ftp-deploy');
 
   // Register tasks
   grunt.registerTask('default', [
