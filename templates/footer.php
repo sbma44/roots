@@ -4,7 +4,7 @@
       <?php dynamic_sidebar('sidebar-footer');?>
       
 	  <section class="widget">
-	  	<form  action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=manifestdensitynet', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
+	  	<form  action="//feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=manifestdensitynet', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
 	  		<h3>Subscribe via Email</h3>
 	  		<div class="input-group">
 	  			<input type="text" class="form-control" name="email" placeholder="Email Address">

@@ -38,13 +38,13 @@ module.exports = function(grunt) {
           authKey: 'key1'
         },
         src: '/Users/tomlee/mapbox/code/old/manifestdensity/current/wp-content/themes/roots',
-        dest: '/public_html/manifestdensity/wp-content/themes/roots',
+        dest: '/public_html/tomlee.wtf/wp-content/themes/roots',
         exclusions: [
           '/Users/tomlee/mapbox/code/old/manifestdensity/current/wp-content/themes/roots/node_modules',
           '/Users/tomlee/mapbox/code/old/manifestdensity/current/wp-content/themes/roots/.git', 
           '/Users/tomlee/mapbox/code/old/manifestdensity/current/wp-content/themes/roots/**/.DS_Store', 
           '/Users/tomlee/mapbox/code/old/manifestdensity/current/wp-content/themes/roots/**/Thumbs.db', 
-          '/public_html/manifestdensity/wp-content/themes/roots/tmp'
+          '/public_html/tomlee.wtf/wp-content/themes/roots/tmp'
         ]
       }
     },
